@@ -72,8 +72,7 @@ https://job-data-api-beta.vercel.app/api/jobs
 
 ## License
 
-This project is for educational/demo purposes.  
-Feel free to modify and use it for your own portfolio!
+Feel free to use or modify this project for your portfolio — please credit this repository with a link.
 
 ---
 Built with ❤️ using React, Vite, and Tailwind CSS.
