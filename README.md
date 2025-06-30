@@ -23,7 +23,7 @@ Easily search, filter, and browse job listings from a public API with a clean, r
 
 1. Clone this repository:
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/R-Dhrumil/JobBoard.git
    cd "Job board"
    ```
 
