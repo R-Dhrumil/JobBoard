@@ -3,7 +3,7 @@ import { FiSun, FiMoon, FiMapPin, FiBriefcase, FiUsers } from "react-icons/fi";
 
 // let demoJobs = []; // Will be filled by API
 
-let demoJobs = []; // global variable for jobs
+// let demoJobs = []; // global variable for jobs
 
 function getVisibleJobs(jobs, search, filtersActive) {
   if (filtersActive && search) return jobs.slice(0, 10);
@@ -11,6 +11,7 @@ function getVisibleJobs(jobs, search, filtersActive) {
 }
 
 const MainPage = () => {
+  const [demoJobs, setDemoJobs] = useState([]);
   const [dark, setDark] = useState(false);
   const [expanded, setExpanded] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -24,14 +25,14 @@ const MainPage = () => {
     fetch("https://job-data-api-beta.vercel.app/api/jobs")
       .then((res) => res.json())
       .then((data) => {
-        demoJobs = Array.isArray(data) ? data : [];
+        setDemoJobs(Array.isArray(data) ? data : []);
         setJobsLoaded(true);
-        forceUpdate((v) => v + 1); // force re-render
+        // force re-render
       })
       .catch(() => {
-        demoJobs = [];
+        setDemoJobs([]);
         setJobsLoaded(true);
-        forceUpdate((v) => v + 1);
+        // forceUpdate((v) => v + 1);
       });
   }, []);
 
