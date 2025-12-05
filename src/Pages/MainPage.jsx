@@ -6,7 +6,7 @@ import { FiSun, FiMoon, FiMapPin, FiBriefcase, FiUsers } from "react-icons/fi";
 let demoJobs = []; // global variable for jobs
 
 function getVisibleJobs(jobs, search, filtersActive) {
-  if (!filtersActive && !search) return jobs.slice(0, 10);
+  if (filtersActive && search) return jobs.slice(0, 10);
   return jobs;
 }
 
