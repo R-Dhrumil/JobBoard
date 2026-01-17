@@ -12,37 +12,6 @@ Easily search, filter, and browse job listings from a public API with a clean, r
 - 📊 **Stats** for jobs, cities, and companies
 - 🖱️ **Expand** job descriptions and apply directly via external links
 
-## Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v18 or newer recommended)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-
-### Installation
-
-1. Clone this repository:
-   ```sh
-   git clone https://github.com/R-Dhrumil/JobBoard.git
-   cd "Job board"
-   ```
-
-2. Install dependencies:
-   ```sh
-   npm install
-   # or
-   yarn install
-   ```
-
-3. Start the development server:
-   ```sh
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-4. Open [http://localhost:5173](http://localhost:5173) in your browser.
-
 ## Project Structure
 
 - `src/`
@@ -57,18 +26,11 @@ This project fetches jobs from a public API endpoint:
 ```
 https://job-data-api-beta.vercel.app/api/jobs
 ```
+## Live Demo
 
-## Customization
-
-- Update the API endpoint in [`src/Pages/MainPage.jsx`](src/Pages/MainPage.jsx) if you want to use your own backend.
-- Tailwind CSS is used for styling; you can customize the design in `index.css` and your Tailwind config.
-
-## Scripts
-
-- `npm run dev` – Start development server
-- `npm run build` – Build for production
-- `npm run preview` – Preview production build
-- `npm run lint` – Run ESLint
+```
+https://job-tunnel.vercel.app/
+```
 
 ## License
 
